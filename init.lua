@@ -46,5 +46,5 @@ function windowSearch()
     chooser:show()
 end
 
-hs.hotkey.bind({ "ctrl", "cmd" }, "W", windowSearch)
-hs.alert.show("Window search loaded (Ctrl+Cmd+W)", 1.5)
+hs.hotkey.bind({ "cmd" }, "tab", windowSearch)
+hs.alert.show("Window search loaded (Cmd+Tab)", 1.5)
