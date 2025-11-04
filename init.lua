@@ -46,5 +46,5 @@ function windowSearch()
     chooser:show()
 end
 
-hs.hotkey.bind({ "cmd" }, "tab", windowSearch)
-hs.alert.show("Window search loaded (Cmd+Tab)", 1.5)
+hs.hotkey.bind({ "alt" }, "tab", windowSearch)
+hs.alert.show("Window search loaded (Option+Tab)", 1.5)
