@@ -1,0 +1,56 @@
+{
+  "WindowSelector": {
+    "description": "Spoon for searching and selecting windows from all spaces",
+    "author": "Atomic235",
+    "version": "1.0",
+    "license": "MIT - https://opensource.org/licenses/MIT",
+    "homepage": "https://github.com/Hammerspoon/Spoons",
+    "methods": {
+      "windowSearch": {
+        "signature": "WindowSelector:windowSearch()",
+        "description": "Shows a chooser with all visible windows from all spaces",
+        "parameters": {},
+        "returns": "None"
+      },
+      "bindHotkeys": {
+        "signature": "WindowSelector:bindHotkeys(mapping)",
+        "description": "Binds hotkeys for WindowSelector",
+        "parameters": {
+          "mapping": "A table containing hotkey modifier/key key pairs. Defaults to WindowSelector.defaultHotkey"
+        },
+        "returns": "WindowSelector object"
+      },
+      "init": {
+        "signature": "WindowSelector:init()",
+        "description": "Initialize WindowSelector spoon",
+        "parameters": {},
+        "returns": "WindowSelector object"
+      },
+      "start": {
+        "signature": "WindowSelector:start()",
+        "description": "Start the WindowSelector spoon",
+        "parameters": {},
+        "returns": "WindowSelector object"
+      },
+      "stop": {
+        "signature": "WindowSelector:stop()",
+        "description": "Stop the WindowSelector spoon",
+        "parameters": {},
+        "returns": "WindowSelector object"
+      }
+    },
+    "variables": {
+      "defaultHotkey": {
+        "description": "Default hotkey to show window search",
+        "default": "{\"alt\"}, \"tab\""
+      },
+      "logger": {
+        "description": "Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon."
+      }
+    },
+    "downloads": ["https://github.com/Hammerspoon/Spoons"],
+    "source": [
+      "https://github.com/Hammerspoon/Spoons/blob/master/Spoons/WindowSelector.spoon/init.lua"
+    ]
+  }
+}
